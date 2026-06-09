@@ -1,0 +1,275 @@
+/* Global CSS Variables Scoped by Website Version */
+
+:root {
+  /* Common transitions */
+  --transition-theme: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-medium: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================================
+   v1: Original Corporate Modern Theme (Default / v1)
+   ========================================================================== */
+html[data-version="v1"], :root:not([data-version]) {
+  --bg-primary: #060b16;
+  --bg-secondary: #0d1527;
+  --bg-tertiary: #131f38;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+  
+  --border-color: rgba(255, 255, 255, 0.08);
+  --glass-bg: rgba(13, 21, 39, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  
+  /* Accents */
+  --color-phone: #a855f7;       /* Purple */
+  --color-pc: #06b6d4;          /* Cyan */
+  --color-deaf: #f59e0b;        /* Amber */
+  --color-success: #10b981;     /* Emerald */
+  --color-danger: #ef4444;      /* Red */
+  
+  --glow-phone: 0 0 15px rgba(168, 85, 247, 0.4);
+  --glow-pc: 0 0 15px rgba(6, 182, 212, 0.4);
+  --glow-deaf: 0 0 15px rgba(245, 158, 11, 0.4);
+  --glow-success: 0 0 10px rgba(16, 185, 129, 0.4);
+  
+  --card-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+  --input-bg: rgba(255, 255, 255, 0.03);
+  
+  /* Fonts */
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: monospace;
+  --font-sub: 'Inter', sans-serif;
+  
+  --border-radius-card: 20px;
+  --border-radius-btn: 50px;
+}
+
+/* ==========================================================================
+   v2: Cyberpunk / Futuristic Theme
+   ========================================================================== */
+html[data-version="v2"] {
+  --bg-primary: #05050a;
+  --bg-secondary: #0a0a14;
+  --bg-tertiary: #101026;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --text-tertiary: #64748b;
+  
+  --border-color: rgba(0, 240, 255, 0.15);
+  --border-glow: rgba(0, 240, 255, 0.3);
+  
+  --glass-bg: rgba(10, 10, 20, 0.85);
+  --glass-border: rgba(0, 240, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+  
+  /* Glowing Accents */
+  --color-phone: #ff0055;       /* Neural Magenta */
+  --color-pc: #00f0ff;          /* Cyber Cyan */
+  --color-deaf: #ffea00;        /* Acoustic Yellow */
+  --color-success: #39ff14;      /* Cyber Green */
+  --color-danger: #ff003c;       /* Alert Red */
+  
+  --glow-phone: 0 0 10px rgba(255, 0, 85, 0.4), 0 0 20px rgba(255, 0, 85, 0.1);
+  --glow-pc: 0 0 10px rgba(0, 240, 255, 0.4), 0 0 20px rgba(0, 240, 255, 0.1);
+  --glow-deaf: 0 0 10px rgba(255, 234, 0, 0.4), 0 0 20px rgba(255, 234, 0, 0.1);
+  --glow-success: 0 0 10px rgba(57, 255, 20, 0.4);
+  
+  --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 240, 255, 0.05);
+  --input-bg: rgba(5, 5, 10, 0.7);
+  
+  /* Fonts */
+  --font-display: 'Orbitron', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-sub: 'Rajdhani', sans-serif;
+  
+  --border-radius-card: 0px; /* Cyber shearing instead of roundness */
+  --border-radius-btn: 0px;
+}
+
+/* ==========================================================================
+   v3: Warm, Natural & Sustainable Theme
+   ========================================================================== */
+html[data-version="v3"] {
+  --bg-primary: #fcfaf6;        /* Warm organic linen/cream */
+  --bg-secondary: #ffffff;      /* Soft leaf white */
+  --bg-tertiary: #f5efe4;       /* Soft clay sand */
+  
+  --text-primary: #2b3a30;      /* Deep pine green for high contrast readability */
+  --text-secondary: #58695d;    /* Muted sage/moss for secondary content */
+  --text-tertiary: #8da193;     /* Dusty leaf green for hints */
+  
+  --border-color: rgba(46, 125, 50, 0.12);
+  --glass-bg: rgba(255, 255, 255, 0.92);
+  --glass-border: rgba(46, 125, 50, 0.12);
+  --glass-shadow: 0 8px 30px rgba(90, 110, 95, 0.06);
+  
+  /* Warm Earthy Accents */
+  --color-phone: #43a047;       /* Warm leaf green */
+  --color-pc: #2e7d32;          /* Forest green */
+  --color-deaf: #827717;        /* Olive gold */
+  --color-success: #2e7d32;     /* Eco green */
+  --color-danger: #c62828;      /* Terracotta red */
+  
+  --glow-phone: 0 0 12px rgba(67, 160, 71, 0.1);
+  --glow-pc: 0 0 12px rgba(46, 125, 50, 0.1);
+  --glow-deaf: 0 0 12px rgba(130, 119, 23, 0.1);
+  --glow-success: 0 0 12px rgba(46, 125, 50, 0.1);
+  
+  --card-shadow: 0 12px 32px rgba(46, 125, 50, 0.04);
+  --input-bg: #faf9f6;
+  
+  /* Fonts */
+  --font-display: 'Playfair Display', serif; /* Elegant, organic serif */
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Outfit', sans-serif; /* Simplified sans-serif numbers */
+  --font-sub: 'Outfit', sans-serif;
+  
+  --border-radius-card: 24px;   /* Highly rounded, organic, natural look */
+  --border-radius-btn: 12px;
+}
+
+/* ==========================================================================
+   Base Elements
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: var(--transition-theme);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.25;
+  transition: var(--transition-theme);
+}
+
+/* Version-dependent headings weight adjust */
+html[data-version="v3"] h1, 
+html[data-version="v3"] h2, 
+html[data-version="v3"] h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none; /* Serifs look better in mixed case */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--font-sub);
+  transition: var(--transition-fast);
+}
+
+/* ==========================================================================
+   Holographic Matrix Grid & Scanline (v2 exclusive)
+   ========================================================================== */
+html[data-version="v2"] body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: 
+    linear-gradient(rgba(18, 18, 35, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 18, 35, 0.35) 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: center;
+  z-index: -2;
+  pointer-events: none;
+}
+
+html[data-version="v2"] body::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+              linear-gradient(90deg, rgba(255, 0, 0, 0.05), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.05));
+  z-index: 9999;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Glassmorphism card utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: var(--border-radius-card);
+  transition: var(--transition-theme);
+}
+
+/* Grid & Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-pc);
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Glowing background overlay spots */
+.glow-overlay {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  z-index: -1;
+  opacity: 0.12;
+  pointer-events: none;
+  transition: var(--transition-theme);
+}
+
+/* Switch overlays in Natural mode */
+html[data-version="v3"] .glow-overlay {
+  opacity: 0.05;
+  filter: blur(160px);
+}
